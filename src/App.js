@@ -1,5 +1,5 @@
 const React = require('react')
-const Sample = require('./components/Sample')
+const Sample = require('./components/Sample').default
 
 export default class App extends React.Component {
   render() {
