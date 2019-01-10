@@ -1,13 +1,14 @@
 const React = require("react");
-const Component = React.Component;
+const PropTypes = require("prop-types");
 
-export default class TestChild extends Component {
-  render() {
-    return (
-      <div>
-        Child 응애~
-        { this.props.name }에요
-      </div>
-    )
-  }
-}
+const TestChild = props => (
+	<div>
+		Child 응애~
+		{props.name}에요
+	</div>
+);
+
+TestChild.propTypes = {
+	name: PropTypes.string.isRequired
+};
+module.exports = TestChild;

@@ -1,7 +1,12 @@
 {
-    "parser": "babel-eslint",
-    "extends": "airbnb",
-    "rules": {
-        "linebreak-style": ["error", "windows"]
-    }
-  }
+	"parser": "babel-eslint",
+	"extends": ["airbnb", "prettier", "prettier/react"],
+	"rules": {
+		"linebreak-style": ["error", "windows"],
+		"react/destructuring-assignment": "never",
+		"react/jsx-filename-extension": "never",
+		"react/prefer-stateless-function": "never",
+		"no-undef": 0,
+		"prefer-destructuring": 0
+	}
+}
