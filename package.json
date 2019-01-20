@@ -3,7 +3,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "./node_modules/.bin/jest",
+    "dev": "./node_modules/.bin/webpack-dev-server",
+    "build": "./node_modules/.bin/webpack"
+  },
+  "jest": {
+    "setupTestFrameworkScriptFile": "./node_modules/jest-enzyme/lib/index.js"
   },
   "dependencies": {
     "react": "^0.14.8",
@@ -17,11 +22,17 @@
     "babel-preset-react": "^6.1.2",
     "console-polyfill": "^0.3.0",
     "css-loader": "^2.1.0",
+    "enzyme": "^3.8.0",
+    "enzyme-adapter-react-14": "^1.2.0",
     "es3ify-loader": "^0.2.0",
     "es5-shim": "^4.5.12",
     "es6-promise": "^4.2.5",
     "fetch-ie8": "^1.5.0",
-    "webpack": "^1.12.9"
+    "jest": "^23.6.0",
+    "jest-enzyme": "^7.0.1",
+    "react-addons-test-utils": "^0.14.8",
+    "webpack": "^1.12.9",
+    "webpack-dev-server": "^1.0.0"
   },
   "keywords": [],
   "author": "",

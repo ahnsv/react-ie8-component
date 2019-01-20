@@ -1,5 +1,6 @@
 const React = require('react')
 const Sample = require('./components/Sample').default
+// const Calendar = require('./components/Calendar').default
 
 export default class App extends React.Component {
   render() {
@@ -7,6 +8,7 @@ export default class App extends React.Component {
       <div>
         Hello World
         <Sample />
+        {/* <Calendar /> */}
       </div>
     )
   }
