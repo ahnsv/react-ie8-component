@@ -1,3 +1,3 @@
-var enzyme = require('enzyme');
-var Sample = require('../Sample')
+const enzyme = require('enzyme')
+const Sample = require('../Sample')
 enzyme.shallow(<Sample />); 
